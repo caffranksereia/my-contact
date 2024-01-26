@@ -11,29 +11,23 @@ const Form = styled.form`
     width:200px;
     height: 100px;
 `;
-const Input = styled.input`
-width:100%;
-height: 100px;
-`;
-
 const Button = styled.button`
 width:100%;
 height: 100px;
 `;
 
+export interface IModal{
+  name?: string;
+  age?:string;
+  number_phone?:string;
+}
 
-
-function ModalDeleteComponent() {
+const ModalDeleteComponent =({name}:IModal)=> {
   return (
     <DivGrid>
     <Form>
-        <label>Nome</label>
-        <Input></Input>
-        <label>Idade</label>
-        <Input></Input>
-        <label>Numero de telefone</label>
-        <Input></Input>
-        <Button>+</Button>
+        <label>{name}</label>
+        <Button>Delete</Button>
     </Form>
   </DivGrid>
   );
