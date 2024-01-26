@@ -21,19 +21,17 @@ width:100%;
 height: 100px;
 `;
 
+export interface IContact{
+  name:string;
+  age?:string;
+  number_phone?:string;
+}
 
-
-function ContactComponent() {
+const ContactComponent = ({name}:IContact)=>{
   return (
     <DivGrid>
     <Form>
-        <label>Nome</label>
-        <Input></Input>
-        <label>Idade</label>
-        <Input></Input>
-        <label>Numero de telefone</label>
-        <Input></Input>
-        <Button>+</Button>
+        <label>{name}</label>
     </Form>
   </DivGrid>
   );
