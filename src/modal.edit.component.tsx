@@ -21,18 +21,22 @@ width:100%;
 height: 100px;
 `;
 
+export interface IModal{
+  name?: string;
+  age?:string;
+  number_phone?:string;
+}
 
-
-function ModalEditComponent() {
+const ModalEditComponent =({name,age,number_phone}:IModal)=>{
   return (
     <DivGrid>
     <Form>
         <label>Nome</label>
-        <Input></Input>
+        <Input>{name}</Input>
         <label>Idade</label>
-        <Input></Input>
+        <Input>{age}</Input>
         <label>Numero de telefone</label>
-        <Input></Input>
+        <Input>{number_phone}</Input>
         <Button>+</Button>
     </Form>
   </DivGrid>
