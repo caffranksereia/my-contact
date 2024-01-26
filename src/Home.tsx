@@ -1,9 +1,12 @@
 import React from 'react';
+import RegisterContact from './register.contact';
+import SearchContact from './search.contact';
 
 function Home() {
   return (
-    <div className="App">
-      <h1>Hello World!</h1>
+    <div>
+      <SearchContact/>
+      <RegisterContact/>
     </div>
   );
 }
