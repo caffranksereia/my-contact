@@ -54,7 +54,7 @@ const InputAge = styled.input`
 width:50px;
 `;
 const Button = styled.button`
-width:30px;
+width:300px;
 height: 20px;
 `;
 
