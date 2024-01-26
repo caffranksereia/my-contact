@@ -1,13 +1,22 @@
 import React from 'react';
 import RegisterContact from './register.contact';
-import SearchContact from './search.contact';
+import GlobalStyled from './globalStyled';
+import styled from 'styled-components';
+import NavBarComponents from './navbar';
+import ModalContact from './modal.contact';
 
+const DivGrid = styled.div`
+display: Grid;
+width:100%;
+height: 100px;`;
 function Home() {
   return (
-    <div>
-      <SearchContact/>
+    <DivGrid>
+      <GlobalStyled/>
+      <NavBarComponents/>
       <RegisterContact/>
-    </div>
+      <ModalContact/>
+    </DivGrid>
   );
 }
 
